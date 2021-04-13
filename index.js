@@ -131,7 +131,7 @@ const fire = document.querySelector("#fire");
 const blast = document.querySelector("#blast");
 const smallblast = document.querySelector("#smallblast");
 let scoreValue = 0;
-let speed = 1;
+let speed = 0;
 
 window.addEventListener("click", function (event) {
   fire.play();
@@ -240,6 +240,8 @@ function animate() {
           setTimeout(() => {
             blast.play();
             scoreValue += 250;
+            if(scoreValue>20000)
+            {speed=scoreValue%20000;}
             scoreTxt.innerHTML = scoreValue;
             projectile.splice(indexProjectile, 1);
           }, 0);
