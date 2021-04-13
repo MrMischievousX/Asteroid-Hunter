@@ -131,6 +131,7 @@ const fire = document.querySelector("#fire");
 const blast = document.querySelector("#blast");
 const smallblast = document.querySelector("#smallblast");
 let scoreValue = 0;
+let speed = 1;
 
 window.addEventListener("click", function (event) {
   fire.play();
@@ -162,8 +163,8 @@ function spawnEnemies() {
 
     const angle = Math.atan2(innerHeight / 2 - y, innerWidth / 2 - x);
     let velocity = {
-      x: Math.cos(angle) * 1.5,
-      y: Math.sin(angle) * 1.5,
+      x: Math.cos(angle) * (1.5 + speed),
+      y: Math.sin(angle) * (1.5 + speed),
     };
     enemies.push(
       new Enemies(x, y, radius, `hsl(${Math.random() * 360},50%,50%)`, velocity)
