@@ -95,7 +95,7 @@ h5 {
     display: flex;
     flex-direction: column;
     letter-spacing: 1px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     width: 50%;
     height: 40%;
@@ -108,7 +108,7 @@ h5 {
     width: 50%;
     height: 20%;
     border: 2px solid blue;
-    margin: 1rem auto;
+    margin: 1rem auto 0 auto;
     font-size: 1.7rem;
     color: white;
     background: black;
@@ -117,7 +117,7 @@ h5 {
     background: white;
     position: absolute;
     color: black;
-    display: flex;
+    display: none;
     flex-direction: column;
     letter-spacing: 1px;
     font-size: x-large;
@@ -132,23 +132,23 @@ h5 {
     width: 70%;
     height: 20%;
     border: 2px solid red;
-    margin: 1.5rem auto;
+    margin: 0rem auto 0 auto;
     font-size: 1.7rem;
     color: white;
     background: black;
   }
   .score1 {
-    margin: 1.5rem 0 0 0;
-    font-size: 2.5rem;
+    margin: 1.2rem 0 0 0;
+    font-size: 2.2rem;
     user-select: none;
   }
   .score2 {
-    margin: 1.2rem 0 0 0;
+    margin: 1rem 0 0 0;
     font-size: 2rem;
     user-select: none;
   }
   h5 {
-    margin: 1.3rem auto 0 auto;
+    margin: 1.2rem auto 1rem auto;
     font-size: 1.4rem;
   }
 }
