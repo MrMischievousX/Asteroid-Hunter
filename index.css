@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+}
+#scoreText {
+  position: absolute;
+  color: white;
+  letter-spacing: 1px;
+  font-size: x-large;
+  margin: 3vh;
+  user-select: none;
+}
+#scoreModal {
+  background: white;
+  position: absolute;
+  color: black;
+  display: none;
+  flex-direction: column;
+  letter-spacing: 1px;
+  font-size: x-large;
+  text-align: center;
+  width: 50%;
+  height: 40%;
+  margin: 30vh 25vw;
+  border-radius: 3vh;
+}
+#startboard {
+  background: white;
+  position: absolute;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+  font-size: x-large;
+  text-align: center;
+  width: 50%;
+  height: 40%;
+  margin: 30vh 25vw;
+  border-radius: 3vh;
+  justify-content: center;
+}
+#start {
+  border-radius: 5vh;
+  width: 50%;
+  height: 20%;
+  border: 2px solid red;
+  margin: 1.5rem auto;
+  font-size: 2rem;
+  color: white;
+  background: black;
+}
+
+.score1 {
+  margin: 1.5rem 0 0 0;
+  font-size: 2.6rem;
+  user-select: none;
+}
+.score2 {
+  margin: 1.3rem 0 0 0;
+  font-size: 2rem;
+  user-select: none;
+}
+#scoreModal > button {
+  border-radius: 5vh;
+  width: 50%;
+  height: 20%;
+  border: 2px solid red;
+  margin: 1.2rem auto;
+  font-size: 1.8rem;
+  color: white;
+  background: black;
+}
+h5 {
+  margin: 1.3rem auto 0 auto;
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 1000px) {
+  canvas {
+    width: 100vw;
+    height: 92vh;
+  }
+  #scoreText {
+    position: absolute;
+    color: white;
+    letter-spacing: 1px;
+    font-size: large;
+    margin: 1vh;
+  }
+  #startboard {
+    background: white;
+    position: absolute;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 50%;
+    height: 40%;
+    margin: 30vh 25vw;
+    border-radius: 3vh;
+    justify-content: center;
+  }
+  #start {
+    border-radius: 5vh;
+    width: 50%;
+    height: 20%;
+    border: 2px solid blue;
+    margin: 1rem auto;
+    font-size: 1.7rem;
+    color: white;
+    background: black;
+  }
+  #scoreModal {
+    background: white;
+    position: absolute;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    font-size: x-large;
+    text-align: center;
+    width: 50%;
+    height: 40%;
+    margin: 30vh 25vw;
+    border-radius: 3vh;
+  }
+  #scoreModal > button {
+    border-radius: 5vh;
+    width: 70%;
+    height: 20%;
+    border: 2px solid red;
+    margin: 1.5rem auto;
+    font-size: 1.7rem;
+    color: white;
+    background: black;
+  }
+  .score1 {
+    margin: 1.5rem 0 0 0;
+    font-size: 2.5rem;
+    user-select: none;
+  }
+  .score2 {
+    margin: 1.2rem 0 0 0;
+    font-size: 2rem;
+    user-select: none;
+  }
+  h5 {
+    margin: 1.3rem auto 0 auto;
+    font-size: 1.4rem;
+  }
+}

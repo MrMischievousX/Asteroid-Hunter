@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./source/meteor.png" sizes="16x16" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Break Em</title>
+  </head>
+  <body>
+    <div id="startboard">
+      <h3>Welcome to Asteroid Hunter game</h3>
+      <button id="start">Start</button>
+    </div>
+    <div id="scoreText"><span>Score: </span><span id="score">0</span></div>
+    <div id="scoreModal">
+      <span class="score1">Score: </span>
+      <span id="scoreBtn" class="score2">0</span>
+      <h5>Made By Akash</h5>
+      <button id="btn">Restart</button>
+    </div>
+    <audio id="background" src="./source/music.mp3"></audio>
+    <audio id="fire" src="./source/fire.wav"></audio>
+    <audio id="blast" src="./source/bangMedium.wav"></audio>
+    <audio id="smallblast" src="./source/bangSmall.wav"></audio>
+    <canvas></canvas>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
