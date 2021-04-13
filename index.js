@@ -241,7 +241,7 @@ function animate() {
             blast.play();
             scoreValue += 250;
             if(scoreValue>20000)
-            {speed=scoreValue%20000;}
+            {speed=scoreValue/20000;}
             scoreTxt.innerHTML = scoreValue;
             projectile.splice(indexProjectile, 1);
           }, 0);
